@@ -13,6 +13,15 @@ const TEMPLATES = [
     downloadUrl: "https://github.com/Amitgajare2/portfolio",
     previewUrl: "https://amitg.netlify.app/",
   },
+  {
+    title: "BrandMyPhone.tech Boilerplate",
+    badge: "Free" as const,
+    description:
+      "Open-source boilerplate behind BrandMyPhone.tech - sell sponsor sticker spots on the back of your phone.",
+    image: "https://i.ibb.co/Rp0txbhG/image.png",
+    downloadUrl: "https://github.com/luisdiaz327/brandmyphone-oss",
+    previewUrl: "https://brandmyphone.tech/",
+  },
 ];
 
 const BADGE_STYLES: Record<TemplateBadge, string> = {

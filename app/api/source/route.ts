@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   if (!file) return new Response("Source not found.", { status: 404 });
 
   try {
-    const code = await readFile(path.join(process.cwd(), file), "utf8");
+    const code = await readFile(path.join(/*turbopackIgnore: true*/ process.cwd(), file), "utf8");
     return new Response(code, {
       headers: { "content-type": "text/plain; charset=utf-8" },
     });
